@@ -21,6 +21,7 @@ namespace Uplift.DataAccess.Data.Repository
         }
 
         public void Add(T entity)
+
         {
             dbSet.Add(entity);
         }

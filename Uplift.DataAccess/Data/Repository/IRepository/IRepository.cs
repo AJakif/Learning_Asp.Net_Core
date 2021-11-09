@@ -20,7 +20,7 @@ namespace Uplift.DataAccess.Data.Repository.IRepository
             string includeProperties = null
             );
 
-        void add(T entity);
+        void Add(T entity);
 
         void Remove(int id);
         void Remove(T entity);
