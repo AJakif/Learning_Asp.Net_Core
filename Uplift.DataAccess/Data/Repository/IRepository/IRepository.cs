@@ -15,6 +15,7 @@ namespace Uplift.DataAccess.Data.Repository.IRepository
             Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
             string includeProperties = null
             );
+
         T GetFirstOrDefault(
             Expression<Func<T, bool>> filter = null,
             string includeProperties = null
@@ -24,5 +25,5 @@ namespace Uplift.DataAccess.Data.Repository.IRepository
 
         void Remove(int id);
         void Remove(T entity);
-    }
+    } 
 }
