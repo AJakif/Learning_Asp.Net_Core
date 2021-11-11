@@ -124,7 +124,7 @@ namespace Uplift.Areas.Admin.Controllers
         public IActionResult Delete(int id)
         {
             var serviceFromDb = _unitOfWork.Service.Get(id);
-            string webRootPath = _hostEnvironment.WebRootPath;
+            var webRootPath = _hostEnvironment.WebRootPath;
             var imagePath = Path.Combine(webRootPath, serviceFromDb.ImageUrl.TrimStart('\\'));
             if (System.IO.File.Exists(imagePath))
             {
