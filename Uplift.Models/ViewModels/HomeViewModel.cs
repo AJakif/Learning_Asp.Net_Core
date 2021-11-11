@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Uplift.Models.ViewModels
 {
-    class HomeViewModel
+    public class HomeViewModel
     {
         public IEnumerable<Category> CategoryList { get; set; }
         public IEnumerable<Service> ServiceList { get; set; }
